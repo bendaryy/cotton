@@ -158,7 +158,7 @@
                             <label class="col-sm-3 col-form-label col-form-label-sm"> الرقم القومى/الرقم الضريبى </label>
                             <div class="col-sm-9">
                                 <input type="number" style="width: 359px" class="form-control form-control-sm text-center"
-                                    name="receiverId" placeholder="الرقم الضريبى">
+                                    name="receiverId" value="{{ $item->BetakaDriba }}" placeholder="الرقم الضريبى">
                             </div>
                         </div>
 
