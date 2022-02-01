@@ -125,7 +125,7 @@ class InvoiceController extends Controller
         // return $datasave;
 
         $trnsformed = json_encode($invoice, JSON_UNESCAPED_UNICODE);
-        $myFileToJson = fopen("C:\laragon\www/cotton\EInvoicing\SourceDocumentJson.json", "w") or die("unable to open file");
+        $myFileToJson = fopen("C:\laragon\www/cottonlive\EInvoicing\SourceDocumentJson.json", "w") or die("unable to open file");
         fwrite($myFileToJson, $trnsformed);
         return redirect()->route('cer');
 
@@ -133,12 +133,12 @@ class InvoiceController extends Controller
     public function openBat()
     {
 
-        shell_exec('C:\laragon\www/cotton\EInvoicing\SubmitInvoices2.bat');
+        shell_exec('C:\laragon\www/cottonlive\EInvoicing\SubmitInvoices2.bat');
 
-        $path = "C:\laragon\www/cotton\EInvoicing\FullSignedDocument.json";
-        $path2 = "C:\laragon\www/cotton\EInvoicing\Cades.txt";
-        $path3 = "C:\laragon\www/cotton\EInvoicing\CanonicalString.txt";
-        $path4 = "C:\laragon\www/cotton\EInvoicing\SourceDocumentJson.json";
+        $path = "C:\laragon\www/cottonlive\EInvoicing\FullSignedDocument.json";
+        $path2 = "C:\laragon\www/cottonlive\EInvoicing\Cades.txt";
+        $path3 = "C:\laragon\www/cottonlive\EInvoicing\CanonicalString.txt";
+        $path4 = "C:\laragon\www/cottonlive\EInvoicing\SourceDocumentJson.json";
 
         $fullSignedFile = file_get_contents($path);
 
