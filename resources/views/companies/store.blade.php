@@ -4,7 +4,7 @@
 <img src={{ asset("assets/img/sora.jpg") }} class="navbar-logo" alt="logo">
 @endsection
 @section('page')
-انشاء فاتورة جديدة
+اضافة عميل جديد
 @endsection
 @section('head')
 <meta charset="utf-8">
@@ -90,8 +90,8 @@
     <label for="exampleFormControlInput1">اسم العميل </label>
     <input style="text-align: center;margin:auto" type="text" class="form-control col-6" id="exampleFormControlInput1" name="name" required placeholder="اسم العميل">
 
-    <label for="exampleFormControlInput1"> رقم البطاقة الضريبية </label>
-    <input  style="text-align: center;margin:auto" type="text" class="form-control col-6" id="exampleFormControlInput1" name="BetakaDriba" required placeholder="رقم البطاقة الضريبية">
+    <label for="exampleFormControlInput1"> رقم البطاقة الضريبية / رقم البطاقة الشخصية / رقم الهوية</label>
+    <input  style="text-align: center;margin:auto" type="text" class="form-control col-6" id="exampleFormControlInput1" name="BetakaDriba"  placeholder="رقم البطاقة الضريبية">
 
 
     <label for="exampleFormControlInput1"> عنوان الشركة </label>

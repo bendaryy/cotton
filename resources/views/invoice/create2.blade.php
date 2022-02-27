@@ -135,13 +135,42 @@
 
 
                 <div class="form-group row">
-                    <label class="col-sm-3 col-form-label col-form-label-sm">اسم الشركة</label>
+                    <label class="col-sm-3 col-form-label col-form-label-sm">اسم الشركة / اسم الشخص</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control form-control-sm text-center" name="receiverName"
                             placeholder="اسم الشركة">
                     </div>
                 </div>
 
+
+                 <div class="form-group row invoice-created-by">
+                        <label for="payment-method-country" class="col-sm-3 col-form-label col-form-label-sm">دولة
+                            المتلقى</label>
+                        <div class="col-sm-9">
+                            <select name="receiverCountry" id="receiverCountry" class="form-control form-control-sm select2">
+                                <option value="EG">مصر</option>
+                                @foreach ( $countries as $country )
+                                <option value="{{ $country->code }}" style="font-size: 20px">{{ $country->Desc_ar }}</option>
+                                @endforeach
+
+                            </select>
+                        </div>
+                    </div>
+
+
+                 <div class="form-group row invoice-created-by">
+                        <label for="payment-method-country" class="col-sm-3 col-form-label col-form-label-sm">نوع الوثيقة
+                            </label>
+                        <div class="col-sm-9">
+                            <select name="documentTypeVersion"  class="form-control form-control-sm">
+
+                                <option value="1.0" style="font-size: 20px">مختومة</option>
+                                <option value="0.9" style="font-size: 20px">غير مختومة</option>
+
+
+                            </select>
+                        </div>
+                    </div>
 
 
                 <div class="invoice-address-client-fields">
@@ -415,6 +444,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         $("#receiverName").select2({
+            dir: "rtl"
+        });
+        $("#receiverCountry").select2({
             dir: "rtl"
         });
 
