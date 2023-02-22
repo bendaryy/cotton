@@ -22,7 +22,6 @@ class InvoiceController extends Controller
                     "branchID" => "0",
                     "country" => "EG",
                     "governate" => auth()->user()->details->governate,
-
                     "regionCity" => auth()->user()->details->regionCity,
                     "street" => auth()->user()->details->street,
                     "buildingNumber" => auth()->user()->details->buildingNumber,
@@ -181,7 +180,7 @@ class InvoiceController extends Controller
 
         $showInvoices = Http::withHeaders([
             "Authorization" => 'Bearer ' . $response['access_token'],
-        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=2000000000');
+        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=1000');
 
         $getData = Http::withHeaders([
             "Authorization" => 'Bearer ' . $response['access_token'],
@@ -204,7 +203,7 @@ class InvoiceController extends Controller
 
         $showInvoices = Http::withHeaders([
             "Authorization" => 'Bearer ' . $response['access_token'],
-        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=2000000000');
+        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=1000');
 
         $allInvoices = $showInvoices['result'];
 
@@ -223,7 +222,7 @@ class InvoiceController extends Controller
 
         $showInvoices = Http::withHeaders([
             "Authorization" => 'Bearer ' . $response['access_token'],
-        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=2000000000');
+        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=1000');
 
         $allInvoices = $showInvoices['result'];
 
@@ -361,7 +360,7 @@ class InvoiceController extends Controller
 
         $showInvoices = Http::withHeaders([
             "Authorization" => 'Bearer ' . $response['access_token'],
-        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=2000000000');
+        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=1000');
 
         $allInvoices = $showInvoices['result'];
 
@@ -380,7 +379,7 @@ class InvoiceController extends Controller
 
         $showInvoices = Http::withHeaders([
             "Authorization" => 'Bearer ' . $response['access_token'],
-        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=2000000000');
+        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=1000');
 
         $allInvoices = $showInvoices['result'];
 
@@ -399,7 +398,7 @@ class InvoiceController extends Controller
 
         $showInvoices = Http::withHeaders([
             "Authorization" => 'Bearer ' . $response['access_token'],
-        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=2000000000');
+        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=1000');
 
         $allInvoices = $showInvoices['result'];
 
@@ -418,7 +417,7 @@ class InvoiceController extends Controller
 
         $showInvoices = Http::withHeaders([
             "Authorization" => 'Bearer ' . $response['access_token'],
-        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=2000000000');
+        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=1000');
 
         $allInvoices = $showInvoices['result'];
 
@@ -437,7 +436,7 @@ class InvoiceController extends Controller
 
         $showInvoices = Http::withHeaders([
             "Authorization" => 'Bearer ' . $response['access_token'],
-        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=2000000000');
+        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=1000');
 
         $allInvoices = $showInvoices['result'];
 
@@ -456,7 +455,7 @@ class InvoiceController extends Controller
 
         $showInvoices = Http::withHeaders([
             "Authorization" => 'Bearer ' . $response['access_token'],
-        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=2000000000');
+        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=1000');
 
         $allInvoices = $showInvoices['result'];
 
@@ -475,7 +474,7 @@ class InvoiceController extends Controller
 
         $showInvoices = Http::withHeaders([
             "Authorization" => 'Bearer ' . $response['access_token'],
-        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=2000000000');
+        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=1000');
 
         $allInvoices = $showInvoices['result'];
 
@@ -494,7 +493,7 @@ class InvoiceController extends Controller
 
         $showInvoices = Http::withHeaders([
             "Authorization" => 'Bearer ' . $response['access_token'],
-        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=2000000000');
+        ])->get('https://api.invoicing.eta.gov.eg/api/v1.0/documents/recent?pageSize=1000');
 
         $allInvoices = $showInvoices['result'];
 
